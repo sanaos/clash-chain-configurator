@@ -1,17 +1,7 @@
-/* @type {import('next').NextConfig} /
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  turbopack: {
-    rules: {
-      '*.yaml': {
-        loaders: ['yaml-loader'],
-        as: '*.js',
-      },
-    },
-  },
-};
+  output: 'export',   // 如果是静态导出，保留；否则删掉
+  // 其他你原来的配置...
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
