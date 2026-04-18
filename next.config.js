@@ -1,17 +1,7 @@
-/* @type {import('next').NextConfig} /
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  turbopack: {
-    rules: {
-      '*.yaml': {
-        loaders: ['yaml-loader'],
-        as: '*.js',
-      },
-    },
-  },
-};
+  reactStrictMode: true,
+  // 其他配置...
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
